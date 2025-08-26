@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wherever U Go</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <span>✈</span>
+                <span>Wherever U Go</span>
+            </div>
+            
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            
+            <input type="text" placeholder="Search for travel recommendations..." id="searchInput">
+            <button onclick="searchRecommendations()">Search</button>
+            <button onclick="resetSearch()">Reset</button>
+        </nav>
+        
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h1>Wherever U Go</h1>
+                <p class="intro-text">
+                    Discover amazing destinations, get personalized travel recommendations, and plan your next adventure with our comprehensive travel platform. 
+                    From hidden gems to popular hotspots, we help you explore the world one destination at a time.
+                </p>
+                <div class="cta-buttons">
+                    <button class="cta-primary">Start Exploring</button>
+                    <button class="cta-secondary">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon twitter">
+                        <img src="twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="social-icon instagram">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon youtube">
+                        <img src="youtube.png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Us Page -->
+        <section id="about" class="about-section">
+            <nav class="about-nav">
+                <div class="nav-brand">
+                    <span>✈</span>
+                    <span>Wherever U Go</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about" class="active">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </nav>
+            
+            <div class="about-content">
+                <div class="company-info">
+                    <h1>About Us</h1>
+                    <p class="company-description">
+                        Welcome to Wherever U Go, your trusted partner in discovering extraordinary travel experiences. 
+                        Founded with a passion for exploration and a commitment to personalized service, we've been helping 
+                        travelers create unforgettable memories since our establishment.
+                    </p>
+                    <p class="company-mission">
+                        Our mission is to connect adventurous souls with the world's most captivating destinations, 
+                        providing expert guidance, authentic experiences, and seamless travel planning. Whether you're 
+                        seeking a relaxing beach getaway, an urban adventure, or a wilderness expedition, our team 
+                        of travel enthusiasts is here to make your dreams a reality.
+                    </p>
+                </div>
+                
+                <div class="team-section">
+                    <h2>Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-photo">👨‍💼</div>
+                            <h3>Khai Le</h3>
+                            <p class="role">Founder & CEO</p>
+                            <p class="bio">Travel enthusiast with 15+ years of experience in the tourism industry. 
+                            Passionate about creating authentic travel experiences.</p>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-photo">👨‍💻</div>
+                            <h3>Patrick Thanh</h3>
+                            <p class="role">Head of Operations</p>
+                            <p class="bio">Expert in travel logistics and customer experience. Ensures every journey 
+                            runs smoothly from start to finish.</p>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-photo">👩‍💼</div>
+                            <h3>Annie Kim</h3>
+                            <p class="role">Lead Travel Consultant</p>
+                            <p class="bio">Certified travel specialist with deep knowledge of global destinations. 
+                            Creates personalized itineraries for every traveler.</p>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-photo">👩‍🎨</div>
+                            <h3>Emma Thompson</h3>
+                            <p class="role">Creative Director</p>
+                            <p class="bio">Designs immersive travel experiences and curates unique adventures 
+                            that go beyond the ordinary tourist path.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Us Page -->
+        <section id="contact" class="contact-section">
+            <nav class="contact-nav">
+                <div class="nav-brand">
+                    <span>✈</span>
+                    <span>Wherever U Go</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact" class="active">Contact Us</a>
+                </div>
+            </nav>
+
+            <div class="contact-content">
+                <div class="contact-card">
+                    <h1>Contact Us</h1>
+                    <p class="contact-intro">Have a question or need help planning your next trip? Send us a message!</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <script src="travel_recommendation.js?v=3"></script>
+    </body>
+</html>
